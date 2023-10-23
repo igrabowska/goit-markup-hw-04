@@ -420,7 +420,7 @@ background-color: var(--light-brand-color);
   color: var(--secondary-background);
 */
 
-.svg-social-icon {fill: #F4F4FD;
+.svg-social-icon {fill: var(--secondary-background);
 max-height: 40px;
 max-width: 40px;}
 /* wg zalecen autosprawdzania border radius na svg??? - nie dziala! .svg-social-icon:hover,
