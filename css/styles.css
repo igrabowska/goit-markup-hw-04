@@ -78,10 +78,11 @@ align-items: center;}
 /*.menu-wraper li {margin-left:40px;
 }*/
 
-  .list {list-style: none;
+  .list {
+  list-style: none;
+  display: flex;
   margin: 0;
   padding-left: 0;
-  display: flex;
   gap: 40px;
 }
 
@@ -123,7 +124,11 @@ margin-left: auto;}
   background-image: linear-gradient(
   rgba(46, 47, 66, 0.7),
   rgba(46, 47, 66, 0.7)),
-  url("../images/hero-baner-photo.jpg");}
+  url("../images/hero-baner-photo.jpg");
+ background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
 
 /*.hero-baner-wraper {
 display: flex;
@@ -237,11 +242,14 @@ padding-bottom: 32px;
   .team-member-role {color: var(--body-text-color); font-size: 16px; line-height: 1.5; letter-spacing: 0.02em;}
  
 
-  .footer-settings {background-color: var(--dark-brand-color);
+  .footer-settings {
+    background-color: var(--dark-brand-color);
 padding: 100px 0;}
 
 .fotter-main-container {display: flex;
+  align-items: baseline;
 }
+.footer-subcontainer {margin-right: 120px;}
 
 
 .logo-footer {font-family: "Raleway", sans-serif;
@@ -256,18 +264,25 @@ display: inline-block;}
 
 .span-logo-footer {color: var(--secondary-background);}
 
+
+.footer-social-container {
+  width: 100%;
+  height: 100%;
+}
 .footer-text {color: var(--secondary-background); 
 font-size: 16px;
 line-height: 1.5; 
 letter-spacing: 0.02em;
-max-width: 264px;
+width: 264px;
 }
 
 .social-media-paragraph {
   font-style: "Roboto", sans-serif; 
   font-weight: 500;
-  font-size: 16px; color:  #ffffff;
+  font-size: 16px; color: var(--main-background);
   letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-bottom: 16px;
  }
 
 .social-icon-list-footer {
@@ -339,12 +354,17 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0
   letter-spacing: 0.02em;
 }
 
-.our-service-icon-container { width: 264px; height: 112px;
+.our-service-icon-container {
+  width: 264px; 
+  height: 112px;
 background-color: var(--secondary-background);
 display: flex;
+align-items: center;
 justify-content: center;
 padding: 25px 100px 25px 100px;
-margin-bottom: 8px;}
+margin-bottom: 8px;
+border-radius: 4px;}
+
 
 .social-icon-list {display: flex;
 justify-content: center;
@@ -356,32 +376,64 @@ padding-left: 0;
 }
 
 .social-icon {
-  background-color: var(--light-brand-color);
- width: 44px;
- height: 44px;  
+ width: 40px;
+ height: 40px;  
  border-radius: 50%;
+  /*display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-background);*/
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  color: var(--secondary-background);
+  background-color: var(--light-brand-color);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  max-height: 40px;}
+  
+.social-link:hover,
+.social-link:focus {background-color: var(--hover-social-color);}
+
+
+.social-icon-list-footer {display: flex;
+gap: 16px;
+}
+
+.social-icon-footer {
+background-color: var(--light-brand-color);
+ width: 40px;
+ height: 40px;  
+ border-radius: 50%;
+  /*display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--secondary-background);
+*/}
+
+.svg-social-icon {fill: #F4F4FD;
+max-height: 40px;
+max-width: 40px;}
+/* wg zalecen autosprawdzania border radius na svg??? - nie dziala! .svg-social-icon:hover,
+.social-media-link-footer:focus {background-color:#31D0AA;} */
+
+
+.customers-list {display: flex;
+gap: 24px;}
+.customers-button {width: calc((100% - 120px) / 6);
+  height: 88px;
 }
-
-.social-icon:hover,
-.social-icon:focus {background-color: var(--hover-social-color);}
-
-
-.customers-button {display:flex;
-}
-
-/*.customer-logo {width: 168px; height: 88px;
-  border: 1px solid var(--customer-logo-color);
-border-radius: 4px;
-padding: 16px 32px;} do rozgryzienia ponizej z hoverem*/
 
 .customers-link {
 display: flex;
-justify-items: center;
-align-items: center;
+justify-content: center;
+align-content: center;
+width: 100%;
+height: 100%;
 border: 1px solid var(--customer-logo-color);
 border-radius: 4px;
 padding: 16px 32px;
@@ -389,11 +441,9 @@ padding: 16px 32px;
 color: var(--customer-logo-color);
 }
 
-.customers-link > svg {
+.customers-link > .customers-icon {
 fill: currentColor;
 display: block;
-width: 100%;
-height: 100%;
 }
 
 .customers-link:hover,
@@ -403,9 +453,3 @@ color: var(--pressed-state-color);}
 
 /*.customers-icon {color: var(--pressed-state-color);}*/
 /*.customers-icon {fill: currentColor;}*/
-
-.footer-social-container {
-
-  width: 100%;
-  height: 100%;
-}
