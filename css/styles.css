@@ -402,7 +402,7 @@ padding-left: 0;
   max-height: 40px;}
   
 .social-link:hover,
-.social-link:focus {background-color: var(--hover-social-color);}
+.social-link:focus {background-color: var(--pressed-state-color);}
 
 
 .social-icon-list-footer {display: flex;
