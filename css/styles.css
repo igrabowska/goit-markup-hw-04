@@ -418,8 +418,8 @@ padding-left: 0;
   justify-content: center;
   max-height: 40px;}
 
-  .social-link-card:hover,
-  .social-link-card:focus {background-color: var(--pressed-state-color);}
+.social-link-card:hover,
+.social-link-card:focus {background-color: var(--pressed-state-color);}
 
 
 /*.social-icon-footer {
