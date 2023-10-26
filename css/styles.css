@@ -1,4 +1,9 @@
 
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
 body {color: var(--body-text-color);
   background-color: var(--main-background);
   font-family: "Roboto", sans-serif;}
@@ -75,8 +80,6 @@ margin-right: 76px;
 display: flex;
 align-items: center;}
 
-/*.menu-wraper li {margin-left:40px;
-}*/
 
   .list {
   list-style: none;
@@ -128,14 +131,8 @@ margin-left: auto;}
  background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
+margin: 0 auto;
 }
-
-/*.hero-baner-wraper {
-display: flex;
-flex-direction: column;
-align-items: center;
-mentor odradza;
-}*/
 
   .baner-heading {font-size: 56px;
   line-height: 1.07;
@@ -199,7 +196,6 @@ margin: 0 auto;
     font-size: 16px; 
     line-height: 1.5; 
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
   }
 
 .section-headline {font-size: 36px; 
@@ -316,9 +312,6 @@ column-gap: 24px;
   flex-basis: calc((100% - 48px) / 3);
 }
 
- /* .portfolio-single-card:hover,
-  .portfolio-single-card:focus {box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}*/
-
 
 .card-footer-wraper {border-left: 1px solid #E7E9FC;
 border-bottom: 1px solid #E7E9FC;
@@ -386,10 +379,6 @@ padding-left: 0;
  width: 40px;
  height: 40px;  
  border-radius: 50%;
-  /*display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--secondary-background);*/
 }
 
 .social-link {
@@ -421,17 +410,6 @@ padding-left: 0;
 .social-link-card:hover,
 .social-link-card:focus {background-color: var(--pressed-state-color);}
 
-
-/*.social-icon-footer {
-background-color: var(--light-brand-color);
- width: 40px;
- height: 40px;  
- border-radius: 50%;
-  /*display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--secondary-background);
-*/
 
 .svg-social-icon {fill: var(--secondary-background);
 max-height: 40px;
@@ -467,7 +445,3 @@ display: block;
 .customers-link:hover,
 .customers-link:focus {border-color: var(--pressed-state-color);
 color: var(--pressed-state-color);}
-
-
-/*.customers-icon {color: var(--pressed-state-color);}*/
-/*.customers-icon {fill: currentColor;}*/
